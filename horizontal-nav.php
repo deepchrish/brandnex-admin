@@ -21,7 +21,7 @@
             <!-- Logo icon -->
           </a>
         </div>
-<!-- mobile right top nav START -->
+          <!-- mobile right top nav START -->
         <div class="col-xs-5 pull-right navs-right visible-sm visible-xs sw-xs-icons">
           <ul class="list-inline list-unstyled bn-head-nav">
             <li><a class="bn-bell" href="#" id="dropnotification" data-toggle="dropdown" aria-haspopup="true"
@@ -93,5 +93,4 @@
       </div>
     </div>
   </nav>
-
 </header>

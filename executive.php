@@ -8,11 +8,11 @@ include 'navbar.php';
 <div class="page-wrapper">
   <div class="container-fluid">
     <ul class="breadcrumb pl-0 pb-0 mb-0">
-      <li><a href="#"><i class="ti-angle-left"></i> Operations</a></li>
+      <li><a href="#"><i class="ti-angle-left"></i> Human Resource</a></li>
     </ul>
     <div class="row sw-dash-landing">
       <div class="col-md-12 sw-xs-welcome">
-        <h3 class="mt-4 mb-3">Categories</h3>
+        <h3 class="mt-4 mb-3">Schedule</h3>
       </div>
     </div>
     <div class="row">
@@ -26,9 +26,14 @@ include 'navbar.php';
                   <input type="search" class=" form-control mr-2" id="exampleInputName2"
                     placeholder="Search Categories">
                 </div>
+              </form>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 text-right">
+              <form class="form-inline pt-4 px-4">
                 <div class="form-group mb-0">
-                  <select class="form-control">
-                    <option>All categories</option>
+                  <label for="shortby" class="mr-3">Short by </label>
+                  <select id="shortby" class="form-control">
+                    <option>Recently Added</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
@@ -43,28 +48,6 @@ include 'navbar.php';
             <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12 mb-2">
               <span class="ml-4 pt-3 hidden-xs">Select 2 of 50 categories</span>
             </div>
-            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12 mb-2">
-              <div class="form-inline px-4 text-right">
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>More Options</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>Show 25 Categories</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-              </div>
-            </div>
           </form>
         </div>
       </div>
@@ -75,19 +58,22 @@ include 'navbar.php';
           <table class="table table-hover bn-table">
             <thead>
               <tr>
-                <th class="w-10">
+                <th>
                   <!-- <input class="ml-2" id="GridCheck" type="checkbox"><label class="mb-0 ml-1" for="GridCheck">All
                     </label> -->
                   <div class="custom-control custom-checkbox ">
-                    <input type="checkbox" class="custom-control-input" id="checkAll" onchange="checkAll(this)"
+                    <input type="checkbox" class="custom-control-input" id="checkboxAll" onchange="checkAll(this)"
                       name="chk[]">
-                    <label class="custom-control-label" for="checkAll">All</label>
+                    <label class="custom-control-label" for="checkboxAll"></label>
                   </div>
                 </th>
-                <th class="w-25">Name</th>
-                <th class="w-25">Slug</th>
-                <th class="w-25">linked Products</th>
-                <th class="w-15">Action</th>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Shift Name</th>
+                <th>Clock In</th>
+                <th>Clock out</th>
+                <th>Break</th>
+                <th>Repeat</th>
               </tr>
             </thead>
             <tbody>
@@ -98,21 +84,24 @@ include 'navbar.php';
                     <label class="custom-control-label" for="checkbox1"></label>
                   </div>
                 </td>
+                <td><a href="#">19707</a></td>
                 <td>
                   <div class="d-flex align-items-center">
                     <img class="rounded-circle"
                       src="https://www.pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/app-assets/images/portrait/small/avatar-s-1.jpg"
                       alt="avatar" height="32" width="32">
-                    <div class="ml-2"><span>Puma </span><br><small class="text-muted">Apparel</small><br><small
-                        class="text-muted">Extra</small></div>
+                    <div class="ml-2"><span>Akash Pathak </span><br><small class="text-muted text-success">Clocked in at
+                        9:00 AM</small></div>
                   </div>
                 </td>
-                <td>t-shirt</td>
-                <td>27 Products</td>
+                <td>Design Team Shift</td>
+                <td>09:00 AM</td>
+                <td>05:00 PM</td>
+                <td>60 Mins, 12:30 PM</td>
+                <td>Every Weekday</td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <a class="btn btn-default" href="#">View</a>
-                    <a class="mx-4" href="#"><i class="ti-trash"></i></a>
+                    <a class="btn btn-default mr-3" href="#">Edit</a>
                     <a class="" href="#"><i class="ti-menu"></i></a>
                   </div>
                 </td>
@@ -124,20 +113,24 @@ include 'navbar.php';
                     <label class="custom-control-label" for="checkbox2"></label>
                   </div>
                 </td>
+                <td><a href="#">19707</a></td>
                 <td>
                   <div class="d-flex align-items-center">
                     <img class="rounded-circle"
                       src="https://www.pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/app-assets/images/portrait/small/avatar-s-1.jpg"
                       alt="avatar" height="32" width="32">
-                    <div class="ml-2"><span>T-shirt </span><br><small class="text-muted">Apparel</small></div>
+                    <div class="ml-2"><span>Cindy Baker</span><br><small class="text-muted text-danger">Clocked out at
+                        3:00 PM</small></div>
                   </div>
                 </td>
-                <td>t-shirt</td>
-                <td>27 Products</td>
+                <td>Human Recources Shift</td>
+                <td>09:00 AM</td>
+                <td>05:00 PM</td>
+                <td>60 Mins, 12:30 PM</td>
+                <td>Every Weekday</td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <a class="btn btn-default" href="#">View</a>
-                    <a class="mx-4" href="#"><i class="ti-trash"></i></a>
+                    <a class="btn btn-default mr-3" href="#">Edit</a>
                     <a class="" href="#"><i class="ti-menu"></i></a>
                   </div>
                 </td>
@@ -149,20 +142,24 @@ include 'navbar.php';
                     <label class="custom-control-label" for="checkbox3"></label>
                   </div>
                 </td>
+                <td><a href="#">19707</a></td>
                 <td>
                   <div class="d-flex align-items-center">
                     <img class="rounded-circle"
                       src="https://www.pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/app-assets/images/portrait/small/avatar-s-1.jpg"
                       alt="avatar" height="32" width="32">
-                    <div class="ml-2"><span>T-shirt </span><br><small class="text-muted">Apparel</small></div>
+                    <div class="ml-2"><span>Simran Kapoor</span><br><small class="text-muted text-success">Clocked in at
+                        9:00 AM</small></div>
                   </div>
                 </td>
-                <td>t-shirt</td>
-                <td>27 Products</td>
+                <td>Sales Team Shift</td>
+                <td>09:00 AM</td>
+                <td>05:00 PM</td>
+                <td>60 Mins, 12:30 PM</td>
+                <td>Every Weekday</td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <a class="btn btn-default" href="#">View</a>
-                    <a class="mx-4" href="#"><i class="ti-trash"></i></a>
+                    <a class="btn btn-default mr-3" href="#">Edit</a>
                     <a class="" href="#"><i class="ti-menu"></i></a>
                   </div>
                 </td>
@@ -174,20 +171,24 @@ include 'navbar.php';
                     <label class="custom-control-label" for="checkbox4"></label>
                   </div>
                 </td>
+                <td><a href="#">19707</a></td>
                 <td>
                   <div class="d-flex align-items-center">
                     <img class="rounded-circle"
                       src="https://www.pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/app-assets/images/portrait/small/avatar-s-1.jpg"
                       alt="avatar" height="32" width="32">
-                    <div class="ml-2"><span>T-shirt </span><br><small class="text-muted">Apparel</small></div>
+                    <div class="ml-2"><span>Cindy Baker</span><br><small class="text-muted text-success">Clocked in at
+                        9:00 AM</small></div>
                   </div>
                 </td>
-                <td>t-shirt</td>
-                <td>27 Products</td>
+                <td>Design Team Shift</td>
+                <td>09:00 AM</td>
+                <td>05:00 PM</td>
+                <td>60 Mins, 12:30 PM</td>
+                <td>Every Weekday</td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <a class="btn btn-default" href="#">View</a>
-                    <a class="mx-4 text-" href="#"><i class="ti-trash"></i></a>
+                    <a class="btn btn-default mr-3" href="#">Edit</a>
                     <a class="" href="#"><i class="ti-menu"></i></a>
                   </div>
                 </td>
@@ -210,6 +211,6 @@ include 'navbar.php';
       </div>
     </div>
   </div>
-  <?php
+<?php
 include 'footer.php';
 ?>

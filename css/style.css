@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url('cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css');
+@import url('//cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css');
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8356,7 +8356,7 @@ body {
 }
 .sidebar-nav ul .sidebar-item .sidebar-link i {
   font-size: 18px;
-  margin: 0 14px;
+  margin: 0 15px;
   position: relative;
   top: 2px;
 }
@@ -8423,6 +8423,62 @@ body {
   display: none;
 }
 /* Navigation CSS END */
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 2.5rem;
+}
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-control-label {
+  margin-bottom: 0;
+}
+.custom-control-label::before {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  display: block;
+  width: 1.65rem;
+  height: 1.65rem;
+  pointer-events: none;
+  content: "";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #dee2e6;
+}
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0.25rem;
+}
+.custom-control-label::after {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  display: block;
+  width: 1.65rem;
+  height: 1.65rem;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #47a8a5;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  content: '\2713';
+  color: #ffffff;
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 1px;
+}
 .bn-search {
   position: relative;
 }
@@ -8439,6 +8495,8 @@ body {
 }
 .bn-table tbody td {
   vertical-align: middle !important;
+  font-size: 13px;
+  font-weight: 500;
 }
 .bn-pagination li input {
   display: inline-block;
@@ -8457,6 +8515,18 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.bn-hr-grid {
+  position: relative;
+  height: 300px;
+  line-height: 1.7;
+}
+.bn-hr-grid p {
+  font-size: 13px;
+}
+.bn-hr-grid a {
+  position: absolute;
+  bottom: 15px;
 }
 .bn-bg {
   background-image: url('../images/notfound-bg.jpg');

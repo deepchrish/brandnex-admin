@@ -10,13 +10,13 @@
                         <li class="sidebar-item active"> <a class="sidebar-link" href="index.php"><i
                                           class="ti-home"></i><span class="hide-menu">Home</span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="storehubs.php"><i
+                        <li class="sidebar-item"> <a class="sidebar-link" href="executive.php"><i
                                           class="ti-id-badge"></i><span class="hide-menu">Executive</span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link" href="#"><i class="ti-layout"></i><span
                                           class="hide-menu">Accounting</span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="#"><i class="ti-light-bulb"></i><span
+                        <li class="sidebar-item"> <a class="sidebar-link" href="human-resources.php"><i class="ti-light-bulb"></i><span
                                           class="hide-menu">Human Resource</span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link" href="operations.php"><i class="ti-briefcase"></i><span

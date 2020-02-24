@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-
 <head>
     <meta charset="utf-8"><!-- html5 version of http-equiv="Content-Type"... -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +45,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
     <section>
         <div class="container">
@@ -111,5 +109,4 @@
         </div>
     </section>
 </body>
-
 </html>
