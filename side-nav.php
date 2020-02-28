@@ -14,7 +14,7 @@
                                           class="ti-id-badge"></i><span class="hide-menu">Executive</span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link" href="#"><i class="ti-layout"></i><span
-                                          class="hide-menu">Accounting</span></a>
+                                          class="hide-menu">Accounting</span> <span class="bn-commingsoon">Soon</span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link" href="human-resources.php"><i class="ti-light-bulb"></i><span
                                           class="hide-menu">Human Resource</span></a>

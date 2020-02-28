@@ -8549,6 +8549,16 @@ input::-webkit-inner-spin-button {
   color: #111111;
   font-size: 18px;
 }
+.bn-commingsoon {
+  color: #ffffff;
+  background: #ff793f;
+  font-size: 10px;
+  text-transform: capitalize;
+  padding: 0 5px;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-weight: 600;
+}
 /* Large devices (large desktops, 1200px and up) */
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 991px) {
